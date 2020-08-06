@@ -53,6 +53,13 @@ class headtailapli{
         else{
             System.out.println(scan_name+" lost!");
         }
+    
+    public void name() {
+        System.out.println("Who are you?");
+        System.out.print(">");
+        Scanner scan = new Scanner(System.in);
+        scan_name = scan.next();
+        System.out.println("Hello, "+scan_name+"!");
     }
 
 
@@ -75,6 +82,7 @@ class headtailapli{
 class headtail {
     public static void main(String[] args) {
         headtailapli hd = new headtailapli(3);
+        hd.name();/*add*/
         hd.start();
         hd.pri_result();
         hd.won_or_lost();
