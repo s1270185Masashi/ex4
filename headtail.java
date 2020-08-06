@@ -46,6 +46,20 @@ class headtailapli{
 
 
 
+    public void won_or_lost(){
+        if(head>tail){
+            System.out.println(scan_name+" won!");
+        }
+        else{
+            System.out.println(scan_name+" lost!");
+        }
+    }
+
+
+
+
+
+
 
 
 
@@ -63,6 +77,7 @@ class headtail {
         headtailapli hd = new headtailapli(3);
         hd.start();
         hd.pri_result();
+        hd.won_or_lost();
   
 
 
